@@ -79,8 +79,6 @@ function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const timer: any = useRef(null);
 
-  const instantTimer: any = useRef(null);
-  const [instantTimerCounter, setInstantTimerCounter] = useState(0);
   let newProcess: Process;
 
   const handleOk = () => {
@@ -111,17 +109,11 @@ function App() {
   useEffect(() => {
     // useRef value stored in .current property
     timer.current = setInterval(() => setCounter((v) => v + 1), 1000 / delay);
-    instantTimer.current = setInterval(
-      () => setInstantTimerCounter((v) => v + 1),
-      1000
-    );
     // clear on component unmount
 
     return () => {
       clearInterval(timer.current);
-      clearInterval(instantTimer.current);
       setCounter(0);
-      setInstantTimerCounter(0);
     };
   }, [algoData, currentProcesses, delay]);
 
