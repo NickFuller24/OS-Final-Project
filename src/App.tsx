@@ -285,17 +285,6 @@ function App() {
             </Timeline.Item>
           ))}
         </Timeline>
-
-        {/* {currentProcesses.length !== 0 ? (
-          <Visualizer
-            counter={instantTimerCounter}
-            currentTimer={instantTimer.current}
-            algorithmGridData={currentProcesses}
-            basicGridData={currentProcesses}
-          />
-        ) : (
-          <div></div>
-        )} */}
       </Modal>
     </OSApp>
   );

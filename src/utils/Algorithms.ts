@@ -1,4 +1,4 @@
-// import React, { useState } from "react";
+// This file is the "BE" of the app
 
 export class Process {
   name: string;
