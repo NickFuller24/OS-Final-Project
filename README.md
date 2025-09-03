@@ -2,6 +2,7 @@
 For our CS 3800 - Operating Systems class, we created a Scheduling Algorithm Visualizer. This allows future students to see how several different scheduling algorithms handle the scheduling of a set of processes. Check out the finished product at https://scheduling-algo-viz.netlify.app
 
 BE (Algorithms) -> Nick
+
 FE -> Carter
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
